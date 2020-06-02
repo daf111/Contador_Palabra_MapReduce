@@ -45,11 +45,11 @@ namespace ContadorPalabras
 
                            if (!lista.ContainsKey(palabra))
                            {
-                               lista.Add(palabra, 1);
+                               lista.Add(palabra, localReduce[palabra]);
                            }
                            else
                            {
-                               lista[palabra]++;
+                               lista[palabra] += localReduce[palabra];
                            }
                        
                        }
